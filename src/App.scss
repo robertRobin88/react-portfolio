@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+footer {
+  box-shadow: 10px 10px 20px black;
+  background-color: rgba(0, 0, 0, .8);
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   p {
+    margin: 0;
+    color: white;
+   }
+}
+
+.App {
+  background-color: #181818;
+  background: url('./bgimg.jpg');
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.App-header {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+  width: 100%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.dark-box {
+  padding: 50px;
+  box-shadow: 10px 10px 20px black;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, .8);
+}
+.my-photo {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
