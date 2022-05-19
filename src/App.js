@@ -2,7 +2,7 @@ import './App.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import aboutMe from './aboutMe.jpg';
-import React, {useState} from 'react';
+import React from 'react';
 import Menubar from './components/menubar.js';
 
 function SocialMedia(props) {
@@ -22,11 +22,11 @@ function SocialMedia(props) {
 }
 function App() {
   return (
-    <div className="App">
+    <div className="app">
     <header>
       
     </header>
-    <body className="App-header">
+    <body className="app-header">
         <Container fluid>
           <Row className="justify-content-center">
             <Col md="3">
