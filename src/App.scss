@@ -29,7 +29,8 @@ footer {
 .App {
   background-color: #181818;
   background: url('./bgimg.jpg');
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
