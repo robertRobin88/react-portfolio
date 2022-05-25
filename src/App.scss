@@ -1,3 +1,6 @@
+$second-color: #c00bd7;
+$white-color: #fff;
+
 .App {
   text-align: center;
 }
@@ -26,9 +29,10 @@ footer {
    }
 }
 
-.App {
+.app {
   background-color: #181818;
   background: url('./bgimg.jpg');
+  background-attachment: fixed;
   min-height: 100vh;
   height: 100%;
   display: flex;
@@ -36,7 +40,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.App-header {
+.app-header {
   background: none;
   display: flex;
   align-items: center;
@@ -52,13 +56,44 @@ footer {
 
 .dark-box {
   padding: 50px;
-  box-shadow: 10px 10px 20px black;
-  height: 90vh;
-  background-color: rgba(0, 0, 0, .8);
+  
 }
+
 .my-photo {
   max-width: 150px;
   height: auto;
   display: block;
   margin: auto;
+}
+.web-box {
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 20px black;
+  background-color: rgba(0, 0, 0, .8);
+}
+.socialMedia {
+  margin-top: 20px;
+  list-style: none;
+}
+.tabs {
+  background-color:  rgba(0, 0, 0, .8);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  color: $second-color;
+  border: 1px solid $second-color;
+  transition: .3s;
+  &:hover {
+    color: $white-color;
+    border-color: $white-color;
+    cursor: pointer;
+  }
+}
+.app a {
+  color: $second-color;
+  text-decoration: none;
+  transition: .3s;
+  &:hover {
+    color: $white-color;
+  }
 }
