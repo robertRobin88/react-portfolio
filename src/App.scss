@@ -31,10 +31,9 @@ footer {
 
 .app {
   background-color: #181818;
-  background: url('./bgimg.jpg');
+  background: url('./citybg.jpg');
   background-attachment: fixed;
-  min-height: 100vh;
-  height: 100%;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -65,35 +64,112 @@ footer {
   display: block;
   margin: auto;
 }
+.about-me-container {
+  div {
+    margin-bottom: 20px;
+  }
+}
 .web-box {
-  padding: 20px;
+  padding: 20px 20px 0;
   margin-bottom: 50px;
   box-shadow: 10px 10px 20px black;
   background-color: rgba(0, 0, 0, .8);
+  height: 100%;
 }
-.socialMedia {
+.app .socialMedia {
   margin-top: 20px;
   list-style: none;
+  padding: 10px;
+  background-color: $second-color;
+  display: flex;
+  justify-content: space-evenly;
+  img {
+    width: 2rem;
+    height: auto;
+  }
+  a {
+color: black;
+font-size: 2rem;
+  }
+  a:hover {
+    color: $white-color;
+  }
 }
-.tabs {
-  background-color:  rgba(0, 0, 0, .8);
-  margin-bottom: 20px;
-  padding: 20px;
+
+
+.app ul.tabs-main {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ li {
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   button {
+    background-color:  rgba(0, 0, 0, .8);
+    margin-bottom: 20px;
+    border-radius: 0;
+    padding: 20px;
+    text-align: center;
+    color: $second-color;
+    border: 1px solid $second-color;
+    width: calc(100% - 15px);
+    transition: .3s;
+    &:hover {
+      color: $white-color;
+      border-color: $white-color;
+      cursor: pointer;
+    }
+   }
+   .nav-link.active {
+     background-color: $second-color;
+   }
+ }
+}
+.fix-height {
+  min-height: calc(100vh - 53px);
+}
+.box-container {
   text-align: center;
-  color: $second-color;
-  border: 1px solid $second-color;
-  transition: .3s;
-  &:hover {
-    color: $white-color;
-    border-color: $white-color;
-    cursor: pointer;
+  .title-box {
+    text-transform: uppercase;
+    color: $second-color;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  span {
+    color: $second-color;
+  }
+  ul {
+    list-style: none;
   }
 }
-.app a {
-  color: $second-color;
-  text-decoration: none;
-  transition: .3s;
-  &:hover {
-    color: $white-color;
+
+@media (max-width: 575.98px) {
+  body .dark-box {
+    padding: 0;
   }
+  body .app ul.tabs-main li{
+    width: 100%;
+    padding: 15px;
+  }
+}
+.tab-content {
+  a {
+    color: $second-color;
+    transition: .3s;
+    &:hover {
+      color: $white-color;
+    }
+  }
+}
+.my-name {
+  font-size: 1.3rem;
+}
+.my-position {
+  background-color: $second-color;
+  font-size: 1.3rem;
+  padding: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
